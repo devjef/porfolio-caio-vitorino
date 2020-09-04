@@ -12,7 +12,7 @@ import Person02 from "../../assets/about/person02.png";
 const about = () => (
   <div id="about">
     <div className="wrapper">
-      <Title title="SOBRE MIM." />
+      <Title title="SOBRE MIM" />
 {/*       <p className="font12">
         Sou videomaker desde ... ja trabalhei com ... utilizando ..., tendo experiencia em ... <br />procuro realizar não só ... mas sim levar a você a ...
       </p> */}

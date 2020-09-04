@@ -34,52 +34,52 @@ class Portfolio extends React.Component {
         {
           id: "1",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=4bZeJ4A3u5s")}/hqdefault.jpg`,
-          title: "Audi",
+          title: "AUDI R8 | JR Estética do Carro",
           tag: "CATEGORIA 1",
           url: "https://www.youtube.com/watch?v=4bZeJ4A3u5s"
         },
         {
           id: "2",
-          preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=Wa18W--vO-0")}/hqdefault.jpg`,
-          title: "Barra Sul",
-          tag: "CATEGORIA 3",
-          url: "https://www.youtube.com/watch?v=Wa18W--vO-0"
+          preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=IAUnorHCsP8")}/hqdefault.jpg`,
+          title: "Cantu Pneus - Grupo Level - RB Filmes",
+          tag: "CATEGORIA 1",
+          url: "https://www.youtube.com/watch?v=IAUnorHCsP8"
         },
         {
           id: "3",
-          preview:  `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=DuEX4z7SPz8")}/hqdefault.jpg`,
-          title: "Bigode Negro",
-          tag: "CATEGORIA 2",
-          url: "https://www.youtube.com/watch?v=DuEX4z7SPz8"
-        },
-        {
-          id: "4",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=gBt1INWboco")}/hqdefault.jpg`,
-          title: "Erica Lopes",
+          title: "Erica Lopes - Vestidos",
           tag: "CATEGORIA 3",
           url: "https://www.youtube.com/watch?v=gBt1INWboco"
         },
         {
+          id: "4",
+          preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=Wa18W--vO-0")}/hqdefault.jpg`,
+          title: "BARRA SUL - CONVENIÊNCIA | RB FILMES",
+          tag: "CATEGORIA 3",
+          url: "https://www.youtube.com/watch?v=Wa18W--vO-0"
+        },
+        {
           id: "5",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=yDwdjkQb_Dg&t")}/hqdefault.jpg`,
-          title: "Erika e Jair",
+          title: "ERIKA E JAIR | RB FILMES",
           tag: "CATEGORIA 2",
           url: "https://www.youtube.com/watch?v=yDwdjkQb_Dg&t"
         },
         {
           id: "6",
-          preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=IAUnorHCsP8")}/hqdefault.jpg`,
-          title: "Grupo Level",
-          tag: "CATEGORIA 1",
-          url: "https://www.youtube.com/watch?v=IAUnorHCsP8"
-        },
-        {
-          id: "7",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=yzu9BKs6i5E")}/hqdefault.jpg`,
-          title: "Rodinaldos",
+          title: "Rodinaldos - Correr Atrás",
           tag: "CATEGORIA 1",
           url: "https://www.youtube.com/watch?v=yzu9BKs6i5E"
         },
+        {
+          id: "7",
+          preview:  `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=DuEX4z7SPz8")}/hqdefault.jpg`,
+          title: "Shave the hair before do a tattoo.",
+          tag: "CATEGORIA 2",
+          url: "https://www.youtube.com/watch?v=DuEX4z7SPz8"
+        }
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
       filterResult: null,
@@ -124,9 +124,9 @@ class Portfolio extends React.Component {
     let projectsArr = [...this.state.filterResult];
     let result;
 
-    if (filter === "ANTIGOS") {
+    if (filter === "NOVOS") {
       result = projectsArr.sort((a, b) => (a.id > b.id ? 1 : -1));
-    }else if (filter === "NOVOS") {
+    }else if (filter === "ANTIGOS") {
       result = projectsArr.sort((a, b) => (a.id > b.id ? 1 : -1)).reverse();
     }
 
@@ -168,7 +168,7 @@ class Portfolio extends React.Component {
     return (
       <div id="portfolio">
         <div className="wrapper">
-          <Title title="PROJETOS." />
+          <Title title="TRABALHOS" />
           <Row>
             <Col xs={12} sm={12} md={8} lg={9}>
               <div className="portfolio__nav">
