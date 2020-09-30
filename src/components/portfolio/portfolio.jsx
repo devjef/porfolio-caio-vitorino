@@ -35,49 +35,49 @@ class Portfolio extends React.Component {
           id: "1",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=4bZeJ4A3u5s")}/hqdefault.jpg`,
           title: "AUDI R8 | JR Estética do Carro",
-          tag: "CATEGORIA 1",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=4bZeJ4A3u5s"
         },
         {
           id: "2",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=IAUnorHCsP8")}/hqdefault.jpg`,
           title: "Cantu Pneus - Grupo Level - RB Filmes",
-          tag: "CATEGORIA 1",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=IAUnorHCsP8"
         },
         {
           id: "3",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=gBt1INWboco")}/hqdefault.jpg`,
           title: "Erica Lopes - Vestidos",
-          tag: "CATEGORIA 3",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=gBt1INWboco"
         },
         {
           id: "4",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=Wa18W--vO-0")}/hqdefault.jpg`,
           title: "BARRA SUL - CONVENIÊNCIA | RB FILMES",
-          tag: "CATEGORIA 3",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=Wa18W--vO-0"
         },
         {
           id: "5",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=yDwdjkQb_Dg&t")}/hqdefault.jpg`,
           title: "ERIKA E JAIR | RB FILMES",
-          tag: "CATEGORIA 2",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=yDwdjkQb_Dg&t"
         },
         {
           id: "6",
           preview: `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=yzu9BKs6i5E")}/hqdefault.jpg`,
           title: "Rodinaldos - Correr Atrás",
-          tag: "CATEGORIA 1",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=yzu9BKs6i5E"
         },
         {
           id: "7",
           preview:  `https://img.youtube.com/vi/${getYouTubeId("https://www.youtube.com/watch?v=DuEX4z7SPz8")}/hqdefault.jpg`,
           title: "Shave the hair before do a tattoo.",
-          tag: "CATEGORIA 2",
+          tag: "VIDEOS",
           url: "https://www.youtube.com/watch?v=DuEX4z7SPz8"
         }
       ],
@@ -177,19 +177,16 @@ class Portfolio extends React.Component {
                     VER TODOS
                   </li>
                   <li
-                    className={this.state.pickedFilter === "CATEGORIA 1" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("CATEGORIA 1")}
+                    className={this.state.pickedFilter === "VIDEOS" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("VIDEOS")}
                   >
-                    CATEGORIA 1
+                   VIDEOS
                   </li>
                   <li
-                    className={this.state.pickedFilter === "CATEGORIA 2" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("CATEGORIA 2")}
+                    className={this.state.pickedFilter === "FOTOS" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("FOTOS")}
                   >
-                    CATEGORIA 2
-                  </li>
-                  <li className={this.state.pickedFilter === "CATEGORIA 3" ? "portfolio__nav-active font12" : "font12"} onClick={() => this.filterGallery("CATEGORIA 3")}>
-                    CATEGORIA 3
+                   FOTOS
                   </li>
                 </ul>
               </div>

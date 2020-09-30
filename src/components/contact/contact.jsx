@@ -114,14 +114,14 @@ class Contact extends React.Component {
         {modalRender}
         <div className="wrapper">
           <Title title="ENTRE EM CONTATO" />
-          <p className="font12">
+          {/* <p className="font12">
            Precisa de ... ? ou até mesmo ... ? Sua idéia é sempre bem vinda!<br></br>Entre em contato e vamos ...
-          </p>
+          </p> */}
 
-          <Row className="padding40">
+          {/* <Row className="padding40">
             <Col md={12} lg={6}>
               <form id="contact-form" onSubmit={this.handleSubmit}>
-                {/* <h4 className="font30 weight800 padding30">Send Us Message.</h4> */}
+                { <h4 className="font30 weight800 padding30">Send Us Message.</h4> }
                 <input type="text" placeholder="Nome" required name="name" value={this.state.name} onChange={this.inputHandler} />
                 <input type="email" placeholder="Email" required name="email" value={this.state.email} onChange={this.inputHandler} />
                 <textarea
@@ -141,7 +141,7 @@ class Contact extends React.Component {
                 <img src={ContactBackground} alt="contact background" />
               </div>
             </Col>
-          </Row>
+          </Row> */}
           <ContactInfo />
           <ContactSocial />
         </div>

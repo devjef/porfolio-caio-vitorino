@@ -17,10 +17,14 @@ const hero = () => (
             <h1 className="weight800 font60">
               My Name is Caio!
             </h1>
-            <p className="font12">
-             Videomaker desde ... realizando o ... do inicio ao fim.
+            <p className="font16">
+            Videomaker e fotógrafo. Conte-me sua ideia e eu contarei sua história.
             </p>
             <Button label="ENTRAR EM CONTATO" target={"contact"} />
+            <p className="font12">
+            Vamos juntos, tornar seu projeto realidade.
+
+            </p>
           </div>
         </Col>
         <Col md={12} lg={6}>

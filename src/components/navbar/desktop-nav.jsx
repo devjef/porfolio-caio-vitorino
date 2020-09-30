@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
  // SCSS
 import './navbar.scss';
 // Assets
-import LogoImg from '../../assets/navbar/logo.svg';
+import LogoImg from '../../assets/navbar/Logo-caio-amarelo-2.svg';
 import MobileMenuIcon from '../../assets/navbar/mobile-menu.svg';
 
 const desktopNav = (props) => (
@@ -24,11 +24,11 @@ const desktopNav = (props) => (
               TRABALHOS
             </Link>
           </li>
-          <li>
+         {/*  <li>
             <Link activeClass="active-link" to="about" spy={true} smooth={true} offset={-70} duration={500}>
               SOBRE MIM
             </Link>
-          </li>
+          </li> */}
           {/* <li>
             <Link activeClass="active-link" to="blog" spy={true} smooth={true} offset={-70} duration={500}>
               BLOG

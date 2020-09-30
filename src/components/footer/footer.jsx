@@ -3,7 +3,7 @@ import { Row, Col } from "react-flexbox-grid";
 import { Link } from "react-scroll";
 import "./footer.scss";
 
-import Logo from '../../assets/footer/logo.svg';
+import Logo from '../../assets/footer/Logo-caio-2.svg';
 import Arrow from '../../assets/footer/arrow.svg';
 
 const partnerBox = () => (
@@ -11,7 +11,7 @@ const partnerBox = () => (
     <div className="wrapper">
       <Row>
         <Col xs={12} sm={6} md={6}>
-          <a href="https://devjef.github.io/projects/" target="blank">
+          <a href="https://devjef.github.io/projects/" target="_blank">
           <div className="footer-box">
             <img src={Logo} alt="logo" />
             <p>© 2020 - DEVJEF</p>

@@ -14,7 +14,13 @@
       color: $white-color;
       font-size: 1.1rem;
       margin-left: 30px;
+
+      &:hover {
+        color: $main-color;
+      }
     }
+
+    
   }
 
   .back-to-top {
